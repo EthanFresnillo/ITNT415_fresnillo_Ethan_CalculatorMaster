@@ -3,6 +3,15 @@
 def add(a, b):
     return a + b
 
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
 def main():
     while True:
         print("\n=== Calculator Master: Ethan's Gen Z Edition ===")
