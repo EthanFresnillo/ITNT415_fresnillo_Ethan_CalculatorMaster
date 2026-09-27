@@ -1,5 +1,7 @@
 # Developer: Ethan Emmanuel Fresnillo
 # Course: ITNT415
+def add(a, b):
+    return a + b
 
 def add(a, b):
     return a + b
@@ -38,10 +40,6 @@ def main():
 
         if choice == '1':
             print(f"Big flex! Total is: {num1} + {num2} = {add(num1, num2)}")
-        elif choice == '2':
-            print(f"Ghosted! Leftover is: {num1} - {num2} = {subtract(num1, num2)}")
-        elif choice == '3':
-            print(f"Bag stacked! Product is: {num1} * {num2} = {multiply(num1, num2)}")
 
 if __name__ == "__main__":
     main()
