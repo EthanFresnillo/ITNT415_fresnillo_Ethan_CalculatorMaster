@@ -1,5 +1,7 @@
 # Developer: Ethan Emmanuel Fresnillo
 # Course: ITNT415
+def add(a, b):
+    return a + b
 
 def main():
     while True:
@@ -26,6 +28,9 @@ def main():
         except ValueError:
             print("Bruh, that's literally not a number. Try again.")
             continue
+
+        if choice == '1':
+            print(f"Big flex! Total is: {num1} + {num2} = {add(num1, num2)}")
 
 if __name__ == "__main__":
     main()
