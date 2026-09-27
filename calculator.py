@@ -12,6 +12,12 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
 def main():
     while True:
         print("\n=== Calculator Master: Ethan's Gen Z Edition ===")
@@ -39,7 +45,7 @@ def main():
             continue
 
         if choice == '1':
-            print(f"Big flex! Total is: {num1} + {num2} = {add(num1, num2)}")
+            print(f"Big flex! Total is: {num1} + {num2} = {add(num1, num2)}"
 
 if __name__ == "__main__":
     main()
