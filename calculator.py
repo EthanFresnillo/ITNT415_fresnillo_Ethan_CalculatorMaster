@@ -1,8 +1,3 @@
-# Developer: Ethan Emmanuel Fresnillo
-# Course: ITNT415
-def add(a, b):
-    return a + b
-
 def add(a, b):
     return a + b
 
@@ -12,11 +7,10 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
-def add(a, b):
-    return a + b
-
-def subtract(a, b):
-    return a - b
+def divide(a, b):
+    if b == 0:
+        return "Dividing by zero? That's mad sus. Red flag."
+    return a / b
 
 def main():
     while True:
@@ -26,13 +20,13 @@ def main():
         print("3. Stack the bag (Multiplication)")
         print("4. Split the bill (Division)")
         print("5. Bounce (Exit)")
-        
+
         choice = input("What's the move? (1-5): ")
 
         if choice == '5':
             print("Aight, bet. Catch you later!")
             break
-        
+
         if choice not in ('1', '2', '3', '4'):
             print("No cap, that's invalid. Pick 1-5.")
             continue
@@ -45,7 +39,14 @@ def main():
             continue
 
         if choice == '1':
-            print(f"Big flex! Total is: {num1} + {num2} = {add(num1, num2)}"
+            print(f"Big flex! Total is: {num1} + {num2} = {add(num1, num2)}")
+        elif choice == '2':
+            print(f"Ghosted! Leftover is: {num1} - {num2} = {subtract(num1, num2)}")
+        elif choice == '3':
+            print(f"Bag stacked! Product is: {num1} * {num2} = {multiply(num1, num2)}")
+        elif choice == '4':
+            result = divide(num1, num2)
+            print(f"Bill split! Result is: {num1} / {num2} = {result}")
 
 if __name__ == "__main__":
     main()
