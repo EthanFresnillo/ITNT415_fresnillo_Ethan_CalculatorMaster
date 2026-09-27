@@ -1,27 +1,30 @@
+# Developer: Ethan Emmanuel Fresnillo
+# Course: ITNT415
+
 def main():
     while True:
-        print("\n--- Calculator Master ---")
-        print("1. Addition")
-        print("2. Subtraction")
-        print("3. Multiplication")
-        print("4. Division")
-        print("5. Exit")
-
-        choice = input("Enter choice (1-5): ")
+        print("\n=== Calculator Master: Ethan's Gen Z Edition ===")
+        print("1. Flex (Addition)")
+        print("2. Ghost (Subtraction)")
+        print("3. Stack the bag (Multiplication)")
+        print("4. Split the bill (Division)")
+        print("5. Bounce (Exit)")
+        
+        choice = input("What's the move? (1-5): ")
 
         if choice == '5':
-            print("Exiting calculator...")
+            print("Aight, bet. Catch you later!")
             break
-
+        
         if choice not in ('1', '2', '3', '4'):
-            print("Invalid input! Please select a valid option.")
+            print("No cap, that's invalid. Pick 1-5.")
             continue
 
         try:
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
+            num1 = float(input("Drop the first number: "))
+            num2 = float(input("Drop the second number: "))
         except ValueError:
-            print("Invalid input! Please enter numeric values.")
+            print("Bruh, that's literally not a number. Try again.")
             continue
 
 if __name__ == "__main__":
